@@ -7,7 +7,7 @@ Examples
     moph-report validate person.txt --schema PERSON
     moph-report validate person.txt --schema PERSON --out person.errors.csv
     moph-report summary service.txt --schema SERVICE
-    moph-report check-cid 1101700203451
+    moph-report check-cid 1000000000018
 """
 
 from __future__ import annotations

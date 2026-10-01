@@ -5,13 +5,13 @@ from moph_report import rules
 
 def test_valid_thai_cid():
     # These all carry a correct check digit.
-    assert rules.is_valid_thai_cid("1101700203450")
-    assert rules.is_valid_thai_cid("1101700203468")
-    assert rules.is_valid_thai_cid("1101700203476")
+    assert rules.is_valid_thai_cid("1000000000017")
+    assert rules.is_valid_thai_cid("1000000000025")
+    assert rules.is_valid_thai_cid("1000000000033")
 
 
 def test_invalid_thai_cid():
-    assert not rules.is_valid_thai_cid("1101700203451")  # bad check digit
+    assert not rules.is_valid_thai_cid("1000000000018")  # bad check digit
     assert not rules.is_valid_thai_cid("123")            # too short
     assert not rules.is_valid_thai_cid("abcdefghijklm")  # not digits
     assert not rules.is_valid_thai_cid("")

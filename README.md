@@ -88,8 +88,10 @@ moph-report crosscheck PERSON=person.txt SERVICE=service.txt \
 moph-report summary service.txt --schema SERVICE
 
 # Validate a single Thai national ID
-moph-report check-cid 1101700203450
+moph-report check-cid 1000000000017
 ```
+
+> The ID numbers in this README, in `examples/` and in `tests/` are made up. They pass the checksum. Their province code is 00, a code no province uses. None of them can belong to a real person.
 
 > 📑 **Excel output** (`--xlsx`) needs the optional `openpyxl` package:
 > `pip install 'moph-report[excel]'`.
